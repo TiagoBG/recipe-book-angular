@@ -7,7 +7,11 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [];
+  public recipes: Recipe[] = [
+    new Recipe('A test recipe', 'Recipe desc', 'https://www.elmundoeats.com/wp-content/uploads/2020/12/FP-10-Minute-Eggless-Tiramisu-For-Two-2.jpg'),
+    new Recipe('A test recipe', 'Recipe desc', 'https://www.elmundoeats.com/wp-content/uploads/2020/12/FP-10-Minute-Eggless-Tiramisu-For-Two-2.jpg')
+
+  ];
 
   constructor() { }
 
